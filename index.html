@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>El Niño del Monte — Portafolio</title>
+    <meta
+      name="description"
+      content="Portafolio de ilustración y diseño de El Niño del Monte."
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- CIELO Y NUBES -->
+    <div class="sky" aria-hidden="true">
+      <div class="sky__cloud sky__cloud--1"></div>
+      <div class="sky__cloud sky__cloud--2"></div>
+      <div class="sky__cloud sky__cloud--3"></div>
+      <div class="sky__cloud sky__cloud--4"></div>
+      <div class="sky__cloud sky__cloud--5"></div>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav l-container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir a inicio">
+          <img
+            class="brand__logo"
+            src="assets/logo.png"
+            alt="Logo El Niño del Monte"
+          />
+          <span class="brand__text">El Niño del Monte</span>
+        </a>
+
+        <button
+          class="burger nav__toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menuPanel"
+          data-js="navToggle"
+        >
+          <span class="burger__lines" aria-hidden="true"></span>
+        </button>
+
+        <div
+          class="nav__panel"
+          id="menuPanel"
+          data-open="false"
+          data-js="navPanel"
+        >
+          <a class="nav__link" href="#trabajos">Trabajos</a>
+          <a class="nav__link" href="#galeria">Galería</a>
+          <a class="nav__link" href="#productos">Productos</a>
+          <a class="nav__link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav__link" href="#patreon">Patreon</a>
+          <a class="nav__link nav__link--cta" href="#contacto">Contáctame</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio" class="l-container">
+      <!-- HERO -->
+      <section class="hero section u-reveal">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Soy <span class="u-accent">El Niño del Monte</span>.<br />
+            Diseño raro, bonito y con vida.
+          </h1>
+
+          <p class="hero__desc">
+            Diseñador gráfico e ilustrador digital. Hago personajes, stickers,
+            piezas para marcas y mundos imagianrios con vibra caricaturesca y
+            con una composición limpia y original.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#trabajos">Ver trabajos</a>
+            <a class="btn btn--ghost" href="#contacto">Contrátame</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Datos rápidos">
+            <div class="chip">Ilustración</div>
+            <div class="chip">Identidad</div>
+            <div class="chip">Animación</div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div
+            class="work-frame u-tilt"
+            role="img"
+            aria-label="Muestra de trabajo"
+          >
+            <div class="work-frame__label">Hey.</div>
+
+            <div class="work-frame__art">
+              <img
+                class="work-frame__img"
+                src="assets/NdelMonteHero.png"
+                alt="Ilustración destacada del portafolio"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="work-frame__caption">
+              <span>Ilustración personal</span>
+              <span class="work-frame__dot" aria-hidden="true"></span>
+              <span>Arte Digital</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRABAJOS -->
+      <section id="trabajos" class="works section u-reveal">
+        <header class="section__head">
+          <h2 class="section__title">Trabajos principales</h2>
+          <p class="section__subtitle">
+            Tres proyectos para entender el estilo: limpio, raro, y amigable.
+          </p>
+        </header>
+
+        <div class="works__grid">
+          <div class="works__stack">
+            <article
+              class="work-card work-card--floaty"
+              data-work="0"
+              data-js="workCard"
+            >
+              <div class="work-card__thumb">
+                <img
+                  class="u-img-cover"
+                  src="assets/work-1.png"
+                  alt="Serie Criaturas del Monte"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-card__meta">
+                <h3 class="work-card__title">Serie “Criaturas del Monte”</h3>
+                <p class="work-card__desc">
+                  Diseño de personajes + paleta orgánica.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="work-card work-card--floaty"
+              data-work="1"
+              data-js="workCard"
+            >
+              <div class="work-card__thumb">
+                <img
+                  class="u-img-cover"
+                  src="assets/work-2.png"
+                  alt="Identidad Verde Raro Studio"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-card__meta">
+                <h3 class="work-card__title">Identidad “Verde Raro Studio”</h3>
+                <p class="work-card__desc">
+                  Sistema de identidad minimalista con personalidad.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="work-card work-card--floaty"
+              data-work="2"
+              data-js="workCard"
+            >
+              <div class="work-card__thumb">
+                <img
+                  class="u-img-cover"
+                  src="assets/work-3.png"
+                  alt="Pack de Stickers Muecas"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-card__meta">
+                <h3 class="work-card__title">Pack de Stickers “Muecas”</h3>
+                <p class="work-card__desc">
+                  Stickers listos para tienda e impresión.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="works__detail" aria-live="polite">
+            <div class="detail-card">
+              <p class="detail-card__kicker">Detalle</p>
+              <h3 class="detail-card__title" data-js="workTitle">
+                Serie “Criaturas del Monte”
+              </h3>
+              <p class="detail-card__text" data-js="workText">
+                Una colección de personajes que son esencialmente animales con
+                formas suaves, líneas gruesas y expresiones exageradas.
+              </p>
+
+              <ul class="detail-card__bullets" data-js="workBullets">
+                <li>Exploración de siluetas + gestos</li>
+                <li>Paleta principal: verdes y acentos cálidos</li>
+                <li>Versiones para impresión y digital</li>
+              </ul>
+
+              <div class="detail-card__actions">
+                <a class="btn btn--ghost" href="#galeria">Ver en galería</a>
+                <a class="btn btn--primary" href="#contacto"
+                  >Pedir cotización</a
+                >
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section id="galeria" class="gallery section u-reveal">
+        <header class="section__head">
+          <h2 class="section__title">Galería dinámica</h2>
+          <p class="section__subtitle">
+            Tarjetas encimadas, con drag, click y movimiento.
+          </p>
+        </header>
+
+        <div class="gallery__shell">
+          <button
+            class="gallery__btn"
+            type="button"
+            aria-label="Anterior"
+            data-js="galleryPrev"
+          >
+            ←
+          </button>
+
+          <div
+            class="gallery__stage"
+            aria-label="Carrusel de ilustraciones"
+            data-js="galleryStage"
+          ></div>
+
+          <button
+            class="gallery__btn"
+            type="button"
+            aria-label="Siguiente"
+            data-js="galleryNext"
+          >
+            →
+          </button>
+        </div>
+
+        <div class="gallery__hint">
+          Tip: arrastra las tarjetas o usa las flechas.
+        </div>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <section id="productos" class="products section u-reveal">
+        <header class="section__head">
+          <h2 class="section__title">Productos</h2>
+          <p class="section__subtitle">
+            Merch con ilustraciones: simple a la vista, vivo al interactuar.
+          </p>
+        </header>
+
+        <div class="products__grid">
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-1.png"
+                alt="Stickers Bosque Pack"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">Playera “Ouroboros Punk”</h3>
+            <p class="product-card__desc">
+              Merch con ilustraciones: simple a la vista, vivo al interactuar.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$299</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Stickers “Bosque Pack”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-2.png"
+                alt="Playera Criatura #2"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">Playera “San Valentín”</h3>
+            <p class="product-card__desc">
+              Impresión suave, ideal para regalo especial.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$299</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Playera “Criatura #2”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-3.png"
+                alt="Gorra Monte Verde"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">Playera “Ahora o Nunca”</h3>
+            <p class="product-card__desc">
+              Impresión de calidad, con textura suave y colores vibrantes.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$299</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Gorra “Monte Verde”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-4.png"
+                alt="Print A4 Hey"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">Print A4 “El Diablazo”</h3>
+            <p class="product-card__desc">
+              Arte para pared: limpio, simpático, con pop.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$199</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Print A4 “Hey.”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-5.png"
+                alt="Sticker XXL Cerebrito"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">
+              Print A4 “Chica chill de cojones”
+            </h3>
+            <p class="product-card__desc">
+              Para laptop, tabla o libreta. Brilla bonito.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$199</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Sticker XXL “Cerebrito”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card u-tilt">
+            <div class="product-card__thumb">
+              <img
+                class="u-img-cover"
+                src="assets/product-6.png"
+                alt="Bundle Marca Personal"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-card__title">Pack de Stickers</h3>
+            <p class="product-card__desc">
+              Ideal regalo. Para laptop, tabla o libreta. Brilla bonito.
+            </p>
+            <div class="product-card__row">
+              <span class="product-card__price">$99</span>
+              <button
+                class="btn btn--primary product-card__buy"
+                type="button"
+                data-js="buyBtn"
+                data-item="Bundle “Marca Personal”"
+              >
+                Comprar
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="about section u-reveal">
+        <header class="section__head">
+          <h2 class="section__title">Sobre mí</h2>
+          <p class="section__subtitle">Conóceme un poco más.</p>
+        </header>
+
+        <div class="about__card">
+          <div class="about__media" aria-label="Foto/ilustración del artista">
+            <div
+              class="portrait u-tilt"
+              role="img"
+              aria-label="Retrato del artista"
+            >
+              <img
+                class="u-img-cover"
+                src="assets/artist.jpeg"
+                alt="El Niño del Monte"
+                loading="lazy"
+              />
+              <div class="portrait__tag">El Niño del Monte</div>
+            </div>
+
+            <span class="about__emoji about__emoji--1" aria-hidden="true"
+              >🤠</span
+            >
+            <span class="about__emoji about__emoji--2" aria-hidden="true"
+              >😈</span
+            >
+            <span class="about__emoji about__emoji--3" aria-hidden="true"
+              >👽</span
+            >
+            <span class="about__emoji about__emoji--4" aria-hidden="true"
+              >🦥</span
+            >
+          </div>
+
+          <div class="about__text">
+            <p class="kicker">Hola!</p>
+            <h3 class="about__title">Soy el Chuy del Monte.</h3>
+            <p class="about__desc">
+              Ilustrador digital, dibujante rebelde. Me especializo en: <br />
+            </p>
+
+            <ul class="detail-card__bullets">
+              <li>Ilustración digital (personajes, escenas, assets)</li>
+              <li>Diseño gráfico para negocios (identidad, carteles, redes)</li>
+              <li>Motion ligero para web y contenido en redes sociales</li>
+            </ul>
+
+            <div class="detail-card__actions">
+              <a class="btn btn--primary" href="#productos">Ver productos</a>
+              <a class="btn btn--ghost" href="#contacto">Hablemos!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PATREON -->
+      <section id="patreon" class="patreon section u-reveal">
+        <div class="patreon__card u-tilt">
+          <div class="patreon__content">
+            <p class="kicker">Apoya mi trabajo</p>
+            <h2 class="patreon__title">¿Te gusta lo que hago? 💚</h2>
+            <p class="patreon__desc">
+              En Patreon subo procesos, bocetos, packs descargables y contenido
+              exclusivo. Tu apoyo me mantiene motivado.
+            </p>
+          </div>
+
+          <a
+            class="btn btn--primary patreon__btn"
+            href="https://www.patreon.com/ninix_delmont3"
+            data-js="patreonBtn"
+            >Ir a mi Patreon</a
+          >
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="contact section u-reveal">
+        <header class="section__head">
+          <h2 class="section__title">Contáctame</h2>
+          <p class="section__subtitle">
+            Mándame un mensaje para cotizar un proyecto o colaborar juntos. Te
+            responderé cuanto antes
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <form class="contact__form" data-js="contactForm">
+            <label class="contact__field">
+              <span class="contact__label">Nombre</span>
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                placeholder="Tu nombre"
+                required
+              />
+            </label>
+
+            <label class="contact__field">
+              <span class="contact__label">Email</span>
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </label>
+
+            <label class="contact__field">
+              <span class="contact__label">Mensaje</span>
+              <textarea
+                class="contact__textarea"
+                name="message"
+                rows="5"
+                placeholder="Cuéntame de tu proyecto..."
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p
+              class="contact__note"
+              role="status"
+              aria-live="polite"
+              data-js="formNote"
+            ></p>
+          </form>
+
+          <aside class="contact__info">
+            <div class="info-card">
+              <p class="kicker">¿Para qué puedo ayudarte?</p>
+              <h3 class="contact__info-title">Ilustración + diseño para:</h3>
+
+              <ul class="detail-card__bullets">
+                <li>Portadas, posters y contenido para redes</li>
+                <li>Identidad visual y assets para marcas</li>
+                <li>Stickers/merch y arte listo para impresión</li>
+                <li>Ilustración editorial y piezas conceptuales</li>
+              </ul>
+
+              <div class="socials" aria-label="Redes sociales">
+                <a
+                  class="social"
+                  href="https://www.instagram.com/ninix_delmont3"
+                  aria-label="Instagram"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M17.5 6.5h.01"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  class="social"
+                  href="https://www.facebook.com/NinxDM"
+                  aria-label="Facebook"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v3H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  class="social"
+                  href="https://www.tiktok.com/@ninix_delmont3"
+                  aria-label="TikTok"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M14 3c.6 3.1 2.6 5 5 5v3c-1.9 0-3.6-.6-5-1.7V16a5 5 0 1 1-5-5c.4 0 .7 0 1 .1v3.2c-.3-.1-.6-.2-1-.2a2 2 0 1 0 2 2V3h3z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="l-container footer__grid">
+        <p>
+          © <span data-js="year"></span> El Niño del Monte. Todos los derechos
+          reservados.
+        </p>
+
+        <div class="dev">
+          <span class="dev__label">Sitio web por</span>
+          <span class="dev__name">Oscar Monroy</span>
+
+          <div class="dev__links" aria-label="Links del desarrollador">
+            <a
+              class="social social--small"
+              href="https://www.instagram.com/monroy.dev"
+              aria-label="Instagram Oscar Monroy Developer"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M17.5 6.5h.01"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="social social--small"
+              href="https://www.linkedin.com/in/oscarmonroytellez/"
+              aria-label="LinkedIn del desarrollador"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M6.5 6.8a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM4.7 21.4V9h3.6v12.4H4.7zM10.5 9h3.4v1.7h.1c.5-1 1.8-2 3.7-2 3.9 0 4.6 2.5 4.6 5.8v6.9h-3.6v-6.1c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v6.2h-3.6V9z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
